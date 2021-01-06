@@ -1,0 +1,31 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+section, .container, .row, .col {
+    display: flex;
+    flex-direction: column;
+
+}
+
+section .row {
+    margin: 0 15px;
+}
+
+section .col {
+    padding: 0 15px;
+}
+
+header + section {
+    margin-top: 100px;
+}
+
+@media(max-width: 768px) {
+    header + section {
+        margin-top: 80px;
+    }
+}
